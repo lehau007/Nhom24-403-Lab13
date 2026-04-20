@@ -1,15 +1,15 @@
-python scripts/load_test.py --concurrency 5
+python scripts/load_test.py --concurrency 30
 
 python scripts/inject_incident.py --scenario rag_slow
-python scripts/load_test.py --concurrency 5
+python scripts/load_test.py --concurrency 30
 
 python scripts/inject_incident.py --scenario rag_slow --disable
 python scripts/inject_incident.py --scenario tool_fail
-python scripts/load_test.py --concurrency 5
+python scripts/load_test.py --concurrency 30
 
 python scripts/inject_incident.py --scenario tool_fail --disable
 python scripts/inject_incident.py --scenario cost_spike
-python scripts/load_test.py --concurrency 5
+python scripts/load_test.py --concurrency 30
 
 
 python scripts/inject_incident.py --scenario cost_spike --disable
