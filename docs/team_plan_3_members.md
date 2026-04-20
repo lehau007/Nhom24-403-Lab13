@@ -1,3 +1,4 @@
+
 # Kế hoạch thực hiện Lab 13 (Dành cho nhóm 3 thành viên)
 
 Do nhóm chỉ có 3 thành viên (thay vì 6 như gợi ý ban đầu), khối lượng công việc sẽ được gom nhóm lại thành 3 mảng chính: **Lõi Hệ thống (Core)**, **Đảm bảo Chất lượng (Reliability)**, và **Báo cáo & Trình bày (Reporting)**.
