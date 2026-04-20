@@ -22,13 +22,18 @@
 ## 3. Technical Evidence (Group)
 
 ### 3.1 Logging & Tracing
-- [EVIDENCE_CORRELATION_ID_SCREENSHOT]: <img src="docs/images/correlation_id_log.png" alt="Correlation ID Log" />
-- [EVIDENCE_PII_REDACTION_SCREENSHOT]: <img src="docs/images/pii_redacted_log.png" alt="PII Redacted Log" />
-- [EVIDENCE_TRACE_WATERFALL_SCREENSHOT]: <img src="docs/images/langfuse_trace_waterfall.png" alt="Trace Waterfall" />
+- [EVIDENCE_CORRELATION_ID_SCREENSHOT]: ![Correlation ID Log](images/correlation_id_log.png)
+- [EVIDENCE_PII_REDACTION_SCREENSHOT]: ![PII Redacted Log](images/pii_redacted_log.png)
+- [EVIDENCE_TRACE_WATERFALL_SCREENSHOT]: ![Trace Waterfall](images/langfuse_trace_waterfall.png)
 - [TRACE_WATERFALL_EXPLANATION]: Trong hình ảnh trace waterfall của một request chat thành công, span cha `run` tốn khoảng 150ms. Bên trong đó, span con `retrieve` tốn ~10ms và span con `generate` (LLM call) tốn ~140ms. Trace có gắn kèm đầy đủ tags: `lab`, `qa`, `claude-sonnet-4-6` và `user_id`, `session_id`.
 
 ### 3.2 Dashboard & SLOs
-- [DASHBOARD_6_PANELS_SCREENSHOT]: `docs/images/langfuse_dashboard_6_panels_1.png`
+- [DASHBOARD_6_PANELS_SCREENSHOT]: ![Langfuse Dashboard 6 Panels - 1](images/langfuse_dashboard_6_panels_1.png)
+- Additional dashboard evidence: ![Langfuse Dashboard 6 Panels - 2](images/langfuse_dashboard_6_panels_2.png)
+- Additional dashboard evidence: ![Langfuse Dashboard 6 Panels - 3](images/langfuse_dashboard_6_panels_3.png)
+- Additional dashboard evidence: ![Langfuse Dashboard 6 Panels - 4](images/langfuse_dashboard_6_panels_4.png)
+- Additional dashboard evidence: ![Langfuse Dashboard 6 Panels - 5](images/langfuse_dashboard_6_panels_5.png)
+- Additional dashboard evidence: ![Langfuse Dashboard 6 Panels - 6](images/langfuse_dashboard_6_panels_6.png)
 - [SLO_TABLE]:
 | SLI | Target | Window | Current Value |
 |---|---:|---|---:|
@@ -37,7 +42,7 @@
 | Cost Budget | < $2.5/day | 1d | $0.05 |
 
 ### 3.3 Alerts & Runbook
-- [ALERT_RULES_SCREENSHOT]: <img src="docs/images/alert_rules.png" alt="Alert Rules" />
+- [ALERT_RULES_SCREENSHOT]: ![Alert Rules](images/alert_rules.png)
 - [SAMPLE_RUNBOOK_LINK]: `docs/alerts.md#HighLatencyAlert`
 
 ---
