@@ -5,7 +5,8 @@ from typing import Any
 
 try:
     from langfuse.decorators import observe, langfuse_context
-except Exception:  # pragma: no cover
+except Exception as e:  # pragma: no cover
+    print("LANGFUSE IMPORT ERROR:", e)
     def observe(*args: Any, **kwargs: Any):
         def decorator(func):
             return func
